@@ -1,0 +1,85 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="menemGrid">
+
+        <!--<StackPanel Orientation="Vertical" Name="sp" >
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >1</Button>
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >2</Button>
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >3</Button>
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >4</Button>
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >5</Button>
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1"  Name="btn6">6</Button>
+        </StackPanel>-->
+
+        <!--<WrapPanel Orientation="Vertical">
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >1</Button>
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >2</Button>
+            <Button Margin = "5" Width="100" Height="35" FontSize = "24.1" >3</Button>
+        </WrapPanel>-->
+
+        <!--<DockPanel>
+            <Button Background="#6CC1E3" DockPanel.Dock="Top" FontSize = "24.1" FontFamily="Comic sans ms" >Header</Button>
+            <StackPanel Background="#4995BE" DockPanel.Dock="Left" Width="100">
+                <Button Background="#91c6e3" Margin="5" >1</Button>
+                <Button Background="#91c6e3" Margin="5" >2</Button>
+                <Button Background="#91c6e3" Margin="5">3</Button>
+                <Button Background="#91c6e3" Margin="5">4</Button>
+            </StackPanel>
+            <Button Background="#F9CA89" DockPanel.Dock="Right" FontSize = "24.1" Width="60" >2</Button>
+            <Button Background="#E6E9Ef" DockPanel.Dock="Top" FontSize = "24.1" Height="360" >5</Button>
+            <Button Background="#2E4392" DockPanel.Dock="Bottom" FontSize = "24.1" Height="30">4</Button>
+        </DockPanel>-->
+
+        <!--<Canvas>
+            <Button  Height="100" Width="100" FontSize="42">1</Button>
+            <Button Canvas.Right="0" Height="100" Width="100" FontSize="42">2</Button>
+            <Button Canvas.Bottom="0" Height="100" Width="100" FontSize="42">3</Button>
+            <Button Canvas.Right="0" Canvas.Bottom="0" Height="100" Width="100" FontSize="42">4</Button>
+        </Canvas>-->
+
+        <!--<Grid Background="AliceBlue" Width="800" Height="430">
+            <Button  Height="100"
+                     Width="100"
+                     FontSize="42"
+                     Margin="148,165,552,165"
+                     Padding="15,13,13,11"
+                     >
+                <Grid >
+                    <Label Margin="2">1</Label>
+                    <Label>2</Label>
+                </Grid></Button>
+            <Button  Height="100" Width="100" FontSize="42" Margin="534,165,166,165">2</Button>
+        </Grid>-->
+
+
+        <Grid Width="600" Height="80" Background="WhiteSmoke">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <!--<Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition ></RowDefinition>
+            </Grid.RowDefinitions>-->
+            <Label FontWeight="Bold" FontSize="19" Margin="5,10,0,0" FontFamily="Roboto">Eva Summer</Label>
+            <Label Grid.Column="0" Grid.Row="1" Foreground="#5193c2" FontSize="19" FontWeight="DemiBold" Margin="5,30,0,0" FontFamily="Roboto">online</Label>
+            <Image Grid.Column="2" 
+                   Source="C:\Users\Seyidmammadli_i\Desktop\search (1).png" Name="photo1" Margin="142,10,40,-1"
+                   />
+            <Image Grid.Column="2" 
+                   Source="C:\Users\Seyidmammadli_i\Desktop\dots.png" Name="photo2" Margin="170,2,9,-6"
+                   />
+
+        </Grid>
+
+
+
+    </Grid>
+</Window>
